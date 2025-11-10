@@ -1,0 +1,48 @@
+{
+  "name": "videocraft-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for VideoCraft AI Video Editor",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "build:production": "set GENERATE_SOURCEMAP=false && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build -l 3000",
+    "analyze": "npm run build && npx serve -s build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "@mui/x-data-grid": "^6.18.0",
+    "axios": "^1.6.0",
+    "jspdf": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.0",
+    "react-player": "^2.13.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.8.0",
+    "video-react": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
